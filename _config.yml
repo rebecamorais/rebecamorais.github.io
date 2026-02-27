@@ -1,3 +1,28 @@
+title: Rebeca Morais aka Rebs | Tech Hub
+description: "Engenharia de Software"
+url: "https://rebecamorais.github.io"
+
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
+
+collections:
+  tutorials:
+    output: true
+    permalink: /tutoriais/:name/
+  glossary:
+    output: true
+    permalink: /glossario/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "glossary"
+    values:
+      layout: "post"
